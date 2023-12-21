@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Tilt+Prism&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.banner {
+  background: linear-gradient(180deg, #653ef0 35%, #ffd099 35%);
+  text-align: center;
+  padding: 20px;
+  border-radius: 25px;
+  width: 250px;
+  height: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.banner img {
+  width: 130px;
+  background-color: #f3b664;
+  border: 3px solid #ff9209;
+  border-radius: 50%;
+  transition: transform 300ms ease-in-out;
+}
+.banner img:hover {
+  transform: scale(1.1);
+}
+.icon h2 {
+  color: #45474B;
+  font-family: jost;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.icon p {
+  color: #45474B;
+  font-family: jost;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+/* Facebook,
+      Twitter
+      Instagram
+      Youtube */
+.logo i {
+  font-size: 13px;
+  padding: 5px;
+}
+.fa-facebook {
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+.fa-twitter {
+  cursor: pointer;
+  background-color: rgb(80, 204, 253);
+  color: white;
+  border-radius: 50%;
+}
+.fa-instagram {
+  cursor: pointer;
+  background-color: rgb(255, 90, 117);
+  color: white;
+  border-radius: 50%;
+}
+.fa-youtube {
+  cursor: pointer;
+  color: red;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+}
+/* Social media Hover */
+
+.logo i:hover {
+  animation: move 0.5s ease;
+}
+
+/* 
+
+  * Like,
+  * Comment,
+  * Share icons are start here  */
+
+.bottom-i i {
+  padding: 20px 2px 10px 10px;
+}
+
+.fa-heart {
+  cursor: pointer;
+  color: rgb(255, 43, 205);
+  
+}
+.fa-heart:hover {
+  animation: move 1s infinite;
+}
+
+.fa-comment {
+  cursor: pointer;
+  color: rgb(151, 139, 139);
+}
+.fa-comment:hover {
+  animation: move 1s infinite;
+}
+.fa-share {
+  cursor: pointer;
+  color: rgb(2, 164, 164);
+}
+.fa-share:hover {
+  animation: move 1s infinite;
+}
+span {
+  color: #3A4D39;
+  font-size: 13px;
+}
+
+/* Button style start here */
+.banner .button {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background: transparent;
+  color: blue;
+}
+.btn {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  border: none;
+  padding: 5px;
+  position: relative;
+  font-family: poppins;
+  font-weight: 700;
+  color: #3A4D39;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  transition: all linear 300ms;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00978d;
+  z-index: -10;
+  width: 0%;
+  height: 100%;
+  transition: 500ms ease-in;
+  border-radius: 10px;
+}
+.btn:hover .layer {
+
+  width: 100%;
+}
+.btn:hover {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+@keyframes move {
+  to {
+    transform: scale(1.1);
+  }
+}
